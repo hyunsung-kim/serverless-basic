@@ -1,1 +1,39 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <script>
+            function apiCall() {
+                $('.api-result').empty("");
+                $.ajax({
+                    url: "https://jz9lmi3xqe.execute-api.us-east-1.amazonaws.com/dev/hello-world",
+                    success: function(res) {
+                        $('.api-result').html(res.message);
+                    }
+                });
+            }
+        </script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="title">
+                <div class="title--icon">&#129409;</div>
+                <div class="title--phrase">Make something that we want</div>
+            </div>
+            <div class="btn-api-call" onclick="apiCall()">
+                Start Now
+            </div>
+            <div class="api-result"></div>
+        </div>
+    </body>
+
+</html>

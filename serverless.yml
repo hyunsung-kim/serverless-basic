@@ -12,6 +12,18 @@ provider:
   name: aws
   runtime: nodejs12.x
   profile: suite-dev
+  # environment:
+  #   DYNAMODB_TABLE: API_TEST_DB
+  # iamRoleStatements:
+  #   - Effect: Allow
+  #     Action:
+  #       - dynamodb:Query
+  #       - dynamodb:Scan
+  #       - dynamodb:GetItem
+  #       - dynamodb:PutItem
+  #       - dynamodb:UpdateItem
+  #       - dynamodb:DeleteItem
+  #     Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
 
 # plugin
 plugins:

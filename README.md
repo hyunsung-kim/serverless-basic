@@ -228,33 +228,79 @@ Serverless: Uploading client files to bucket...
 Serverless: Success! Your site should be available at http://helloworld-hyunsung-test1.s3-website-us-east-1.amazonaws.com/
 ```
 
-- Route53 & Custom Domains
-
-- Creating SSL
-
-- Creating CloudFront Distribution
-
-- Invalidating the Cache
-
-
 ## 백엔드 작업하기
+
+서버리스에서 사용할 수 있는 DB 중에 하나가 `DynamoDB`입니다. 해당 DB는 `Key` `Value` 형식으로 구성됩니다.
+서버리스 프레임워크에서 DB를 만들고 API와 연결해 보자.
 
 - DB 만들기
 ```
+resources:
+  Resources:
+    TodosDynamoDbTable:
+      Type: AWS::DynamoDB::Table
+      DeletionPolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:provider.environment.DYNAMODB_TABLE}
+```
 
+- DB 권한 주기
+```
+# serverless.yml
+environment:
+  DYNAMODB_TABLE: tableName
+iamRoleStatements:
+  - Effect: Allow
+    Action:
+      - dynamodb:Query
+      - dynamodb:Scan
+      - dynamodb:GetItem
+      - dynamodb:PutItem
+      - dynamodb:UpdateItem
+      - dynamodb:DeleteItem
 ```
 
 - API 서비스 만들기
 
-- 엔드 포인트 연결
+API를 생성을 위해서는 아래와 같이 선언하여 주면 된다.
 
-- 인증
+```
+# serverless.yml
+---
+resources:
+  Resources:
+    TodosDynamoDbTable:
+      Type: AWS::DynamoDB::Table
+      DeletionPolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:provider.environment.DYNAMODB_TABLE}
+
+```
 
 
 ## TODO
 - [ ] 로컬 테스트하기
 - [ ] 안전하게 배포하기
 - [ ] 다른 언어로 사용하기
+- [ ] [도메인 사용해서 프론트 배포하기](https://www.serverless.com/examples/aws-node-single-page-app-via-cloudfront)
 
 ## Reference
 - [Full stack Serverless](https://www.serverless.com/learn/courses/full-stack-application-development-on-aws/)
