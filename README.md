@@ -9,7 +9,7 @@
 # 들어가기 전에...
 
 <p align="center">
-[<img src="https://img.youtube.com/vi/ufLmReluPww/maxresdefault.jpg" width="50%">](https://youtu.be/ufLmReluPww)
+<a href="https://youtu.be/ufLmReluPww"><img src="https://img.youtube.com/vi/ufLmReluPww/maxresdefault.jpg" width="50%"></a>
 </p>
 
 # 서비리스(Serverless)
