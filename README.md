@@ -6,7 +6,9 @@
 
 ---
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/ufLmReluPww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[![Watch the video](https://i.imgur.com/ufLmReluPww.png)](https://www.youtube.com/watch?v=ufLmReluPww)
+
 
 
 # 서비리스(Serverless)
