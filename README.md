@@ -4,8 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
-
+<br/>
 # 들어가기 전에...
 
 <p align="center">
