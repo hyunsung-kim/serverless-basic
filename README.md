@@ -6,9 +6,11 @@
 
 ---
 
+# 들어가기 전에...
 
-
+<p align="center">
 [<img src="https://img.youtube.com/vi/ufLmReluPww/maxresdefault.jpg" width="50%">](https://youtu.be/ufLmReluPww)
+</p>
 
 # 서비리스(Serverless)
 
