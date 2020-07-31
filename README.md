@@ -12,6 +12,9 @@
 <a href="https://youtu.be/ufLmReluPww"><img src="https://img.youtube.com/vi/ufLmReluPww/maxresdefault.jpg" width="50%"></a>
 </p>
 
+<br/>
+<br/>
+
 # 서비리스(Serverless)
 
 서버리스란, 서버가 없다는 의미입니다. 하지만 서버가 없는 것이 아니라 "서버를 관리할 필요가 없는" 뜻 입니다. 
