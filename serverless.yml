@@ -11,6 +11,17 @@ service: serverless-basic
 provider:
   name: aws
   runtime: nodejs12.x
+  profile: suite-dev
+
+# plugin
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: helloworld-hyunsung-test1
+    distributionFolder: frontend
+    errorDocument: index.html
 
 # The `functions` block defines what code to deploy
 functions:
@@ -22,3 +33,6 @@ functions:
           path: hello-world
           method: get
           cors: true
+
+# you can add CloudFormation resource templates here
+# resources: ${file(resources.yml)}
