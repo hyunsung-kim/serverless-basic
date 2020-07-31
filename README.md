@@ -4,6 +4,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+---
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ufLmReluPww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 # 서비리스(Serverless)
 
@@ -294,6 +298,7 @@ resources:
         TableName: ${self:provider.environment.DYNAMODB_TABLE}
 
 ```
+
 
 
 ## TODO
