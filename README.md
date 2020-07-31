@@ -160,12 +160,14 @@ Serverless: Stack removal finished...
 - [Serverless.yml 파일 예제](https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
 
 - 람다 구조
+
 아래 그림은 우리가 서버를 개발할 때와 구조와 굉장히 비슷하다. 곧 서버리스에서 사용자의 GET or POST 요청이 호출되면 Serverless에서는 API G/W라고 하는 서비스가 요청을 최초롤 받게 되고 특정한 요청 PATH에 해당하는 람다를 호출하게 됩니다.
 
 <img src="api-lambda-call.png" height="200" alt="REQ-Lambda" />
 
 아래 소스에서 보면, `/hello-world` 에 GET으로 요청을 보내면 handler.js 파일 안에 `helloWorld` 라는 함수를 호출한다.
 즉 `helloWorld`라는 함수에서 필요한 처리를 하고 결과를 돌려주면 된다. 이런 구조는 이전의 서버를 직접 관리할 때의 구조와 동일하다.
+
 ```
 functions:
   helloWorld:
