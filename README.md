@@ -7,9 +7,8 @@
 ---
 
 
-[![Watch the video](https://i.imgur.com/ufLmReluPww.png)](https://www.youtube.com/watch?v=ufLmReluPww)
 
-
+[<img src="https://img.youtube.com/vi/ufLmReluPww/maxresdefault.jpg" width="50%">](https://youtu.be/ufLmReluPww)
 
 # 서비리스(Serverless)
 
