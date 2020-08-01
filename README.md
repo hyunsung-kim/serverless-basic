@@ -30,7 +30,7 @@
 ## 클라언트 - 서버 프로그램
 <img src="overview.png" height="200" alt="Serverless Logo" />
 
- - Route53◊
+ - Route53
  - SSL
  - CloudFront
  - S3
@@ -43,7 +43,7 @@
 
 서버리스 프레임워크를 설치하고 프로젝트를 하나 만든 후에 배포 해보자.
 
-> 사전작업: [Node] 설치에서 Node를 설치하면 `npm`이 설치된다.
+> 사전작업: [Node](https://nodejs.org/ko/download/) 를 설치하면 `npm`이 설치된다. 서버리스에서 모든 필요한 프로그램은 `npm` 을 통하여 설치하므로 꼭 필요한 프로그램입니다.ㅍ
 
 - 서버리스 프레임워크 설치
 ```
