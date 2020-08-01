@@ -17,16 +17,17 @@
 
 # 서비리스(Serverless)
 
-서버리스란, 서버가 없다는 의미입니다. 하지만 서버가 없는 것이 아니라 "서버를 관리할 필요가 없는" 뜻 입니다. 
-그렇다면 어떻게 서버를 대신해 준다는 걸까요? 내부적으로는 FaaS(Function as a Service) 혹은 BaaS(Backend as a Service) 정의되는 기술을 사용해서 서버를 대체하게 됩니다.
+서버리스란, 단어를 풀어보면 "서버가 없다"는 의미입니다. 하지만 실제로는 서버가 없는 것이 아니라 "서버를 관리할 필요가 없는" 뜻이 좀 더 나을 거 같습니다.
+그렇다면 서버 관리할 필요가 없다는 건 어떤 의미일까요? 관리가 필요없다는 건, 우리가 이전에 배운 거 처럼 서버에 진입해서 프로그램을 배포하고 느리면 서버를 추가해 주고 할 필요가 없다는 것입니다.
 
+서버리스는 현재 크게 2 가지로 구분하여 생각할 수 있습니다. 하나는 FaaS(Function as a Service) 이고 또 하나는  BaaS(Backend as a Service) 입니다.
 
 :heavy_exclamation_mark: 용어
 > FaaS(Function as a Service)? 함수(or 람다)만 개발하고 나머지 서버들의 역할을 서비스를 제공하는 쪽(AWS, AZURE, GCP)에서 담당하겠다는 방식
 > BaaS(Function as a Service)? 모바일에 특화된 백엔드 개발 서버를 대신해 주는 역할을 하는 방식을 의미함. 
 
 
-## 최종 목표
+## 클라언트 - 서버 프로그램
 <img src="overview.png" height="200" alt="Serverless Logo" />
 
  - Route53◊
